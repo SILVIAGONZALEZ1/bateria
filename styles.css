@@ -1,0 +1,59 @@
+/* Estilos base */
+.animacion {
+    animation: mover 1s linear infinite;
+    margin: 20px;
+}
+
+@keyframes mover {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}
+
+/* Clase para desactivar animaciones */
+.no-animacion {
+    animation: none !important;
+}
+
+/* Estilos para la interfaz de la batería */
+.info-bateria {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-bateria h2 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.info-bateria div {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el gráfico de la batería */
+.grafico-bateria {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    position: relative; /* Añadido para posicionar el porcentaje */
+}
+
+.porcentaje-bateria {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.porcentaje-bateria span {
+    font-size: 24px;
+    font-weight: bold;
+    color: green; /* Color inicial */
+}
+
+
